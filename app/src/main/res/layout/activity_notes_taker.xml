@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_663872039_1_phonoteka_org_p_foni_dlya_prilozhenii_krasivo_1"
+    tools:context="NotesTaker"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Информация"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ФИО"
+            android:textColorHint="@color/black"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Место неполадки"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/roomnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер комнаты"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Место повреждения"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Спальная комната"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/prihozhaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Прихожая"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/toilet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Санузел"
+                android:textColor="@color/black"
+                android:textSize="20sp">
+
+            </RadioButton>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Что сломалось?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/addcom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Комментарий"
+            android:textColorHint="@color/black"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Сохранить">
+
+        </Button>
+
+        <Button
+            android:id="@+id/gotomainactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Назад">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
